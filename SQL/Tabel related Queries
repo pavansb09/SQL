@@ -1,0 +1,26 @@
+1) CREATE :
+          CREATE TABLE table_name(
+          column_name1 datatype constraint,
+          column_name2 datatyoe constraint,
+          );
+Example: CREATE TABLE Student(
+          roll no INT PRIMARY KEY,
+          name VARCHAR(50)
+          );
+
+2) SELECT & view all Columns
+    SELECT*FROM table_name;
+
+3) INSERT
+INSERT INTO table_name
+(colname1,colname2);
+vaules
+(col1_v1_col2_v1)
+(col1_v2_col2_v2)
+
+
+Example : INSERT INTO student
+           (rollno,name)
+           vaules
+           (101, "Karan");
+           (102, "Arjun");
