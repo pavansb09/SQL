@@ -1,7 +1,0 @@
-1) CREATE :
-    CREATE DATABASE db_name;
-    CREATE DATABASE IF NOT EXISTS db_name ( This IF NOT EXISTS is create a table if not aleardy created)
-
-2) DROP :
-    DROP DATABASE db_name;
-    DROP DATABASE IF EXISTS db_name ( This IF EXISTS is Drop the databse if not aleardy droped)
