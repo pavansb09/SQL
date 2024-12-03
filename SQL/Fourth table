@@ -1,0 +1,34 @@
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Age INT,
+    Grade CHAR(1)
+);
+
+INSERT INTO Students (StudentID, FirstName, LastName, Age, Grade)
+VALUES 
+(1, 'John', 'Doe', 20, 'A'),
+(2, 'Jane', 'Smith', 21, 'B'),
+(3, 'Alice', 'Johnson', 22, 'A'),
+(4, 'Bob', 'Brown', 23, 'C');
+
+SELECT * FROM Students;
+
+SELECT FirstName, LastName, Grade 
+FROM Students 
+WHERE Grade = 'A';
+
+UPDATE Students
+SET Age = 24
+WHERE StudentID = 4;
+
+DELETE FROM Students 
+WHERE Grade = 'C';
+
+SELECT Grade, COUNT(*) AS StudentCount
+FROM Students
+GROUP BY Grade;
+
+SELECT * FROM Students
+ORDER BY Age DESC;
